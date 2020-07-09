@@ -18,10 +18,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-//        if ([self isKindOfClass:NSClassFromString(@"NextViewController")]) {
-//
-//        }
-        self.hidesBottomBarWhenPushed = YES;
+        self.rt_hidesBottomBarWhenPushed = YES;
     }
     return self;
 }

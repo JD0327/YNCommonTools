@@ -25,8 +25,6 @@
 		72094E482410B3E000A09DE2 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72094E392410B3E000A09DE2 /* Resources.bundle */; };
 		72094E492410B3E000A09DE2 /* YNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E3A2410B3E000A09DE2 /* YNAppDelegate.m */; };
 		72094E4C2410B47100A09DE2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E4B2410B47100A09DE2 /* BaseViewController.m */; };
-		72094E502410B47B00A09DE2 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E4D2410B47B00A09DE2 /* NextViewController.m */; };
-		72094E512410B47B00A09DE2 /* qweqwe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72094E4F2410B47B00A09DE2 /* qweqwe.jpg */; };
 		72094E542410B48D00A09DE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E532410B48C00A09DE2 /* ViewController.m */; };
 		7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7226C9F02410D9F800B6B93C /* WSDatePickerView.m */; };
 		7259F5B624B5AFCB0004E8CE /* YNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5B524B5AFCB0004E8CE /* YNBannerView.m */; };
@@ -70,9 +68,6 @@
 		72094E3C2410B3E000A09DE2 /* UIImage+YNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YNExtension.h"; sourceTree = "<group>"; };
 		72094E4A2410B47100A09DE2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		72094E4B2410B47100A09DE2 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		72094E4D2410B47B00A09DE2 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
-		72094E4E2410B47B00A09DE2 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
-		72094E4F2410B47B00A09DE2 /* qweqwe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qweqwe.jpg; sourceTree = "<group>"; };
 		72094E522410B48C00A09DE2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		72094E532410B48C00A09DE2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7226C9EF2410D9F800B6B93C /* WSDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
@@ -130,9 +125,6 @@
 				72094E4B2410B47100A09DE2 /* BaseViewController.m */,
 				72094E522410B48C00A09DE2 /* ViewController.h */,
 				72094E532410B48C00A09DE2 /* ViewController.m */,
-				72094E4E2410B47B00A09DE2 /* NextViewController.h */,
-				72094E4D2410B47B00A09DE2 /* NextViewController.m */,
-				72094E4F2410B47B00A09DE2 /* qweqwe.jpg */,
 				72094E112410B20600A09DE2 /* Assets.xcassets */,
 				72094E132410B20600A09DE2 /* LaunchScreen.storyboard */,
 				72094E162410B20600A09DE2 /* Info.plist */,
@@ -263,7 +255,6 @@
 				72094E482410B3E000A09DE2 /* Resources.bundle in Resources */,
 				72094E152410B20600A09DE2 /* LaunchScreen.storyboard in Resources */,
 				72094E122410B20600A09DE2 /* Assets.xcassets in Resources */,
-				72094E512410B47B00A09DE2 /* qweqwe.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +320,6 @@
 				7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */,
 				72094E4C2410B47100A09DE2 /* BaseViewController.m in Sources */,
 				72094E492410B3E000A09DE2 /* YNAppDelegate.m in Sources */,
-				72094E502410B47B00A09DE2 /* NextViewController.m in Sources */,
 				72094E472410B3E000A09DE2 /* RTRootNavigationController.m in Sources */,
 				72094E432410B3E000A09DE2 /* NSDate+YNExtension.m in Sources */,
 				72918E4F24B6BBF200AD83E8 /* YNRBDMuteSwitch.m in Sources */,
