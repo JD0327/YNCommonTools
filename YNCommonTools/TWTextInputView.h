@@ -102,7 +102,7 @@ static NSString * const TWRegularEmail = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A
 /** 文本字体 */
 @property (strong, nonatomic) UIFont *font;
 /** 占位颜色 */
-- (void)setPlaceHolderColor:(UIColor *)placeHolderColor;
+- (void)setPlaceHolderColor:(UIColor *)placeHolderColor font:(UIFont * _Nullable)font;
 /** 文本对齐方式 */
 - (void)setAlignment:(NSTextAlignment)alignment;
 /** 设置回车键 */

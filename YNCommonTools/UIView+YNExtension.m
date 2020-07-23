@@ -115,4 +115,29 @@
     [viewLayer addAnimation:animation forKey:nil];
 }
 
+- (void)yn_shakeAnimationWithPosition:(CGFloat)positon {
+    AudioServicesPlaySystemSound(1521);
+    CALayer *viewLayer = self.layer;
+    CGPoint position = viewLayer.position;
+    CGPoint left = CGPointMake(position.x-positon, position.y);
+    CGPoint right = CGPointMake(position.x+positon-1, position.y);
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    [animation setFromValue:[NSValue valueWithCGPoint:left]];
+    [animation setToValue:[NSValue valueWithCGPoint:right]];
+    [animation setAutoreverses:YES];
+    [animation setDuration:0.04];
+    [animation setRepeatCount:4];
+    [viewLayer addAnimation:animation forKey:nil];
+}
+
+//TODO: 给视图添加圆角，摒弃layer的cornerRadius，提高性能
+- (void)addCornerRadius:(CGFloat)cornerRadius frame:(CGRect)frame {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:frame cornerRadius:cornerRadius];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
+    maskLayer.frame = frame;
+    maskLayer.path = path.CGPath;
+    self.layer.mask = maskLayer;
+}
+
 @end

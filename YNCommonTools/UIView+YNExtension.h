@@ -21,9 +21,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGSize  yn_size;
 @property (nonatomic, assign) CGPoint yn_origin;
 
+/**
+ * 添加阴影
+ */
 - (void)yn_drawShadowWithOffset:(CGSize)offset radius:(CGFloat)radius color:(UIColor *)color opacity:(CGFloat)opacity;
 
-- (void)yn_shakeAnimationForView;
+/**
+ * 视图抖动，添加抖动幅度
+ */
+- (void)yn_shakeAnimationWithPosition:(CGFloat)positon;
+
+/**
+ *  给视图添加圆角，摒弃layer的cornerRadius，提高性能
+ */
+- (void)addCornerRadius:(CGFloat)cornerRadius frame:(CGRect)frame;
 
 @end
 

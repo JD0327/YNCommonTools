@@ -526,12 +526,19 @@
     }
 }
 
-- (void)setPlaceHolderColor:(UIColor *)placeHolderColor {
+- (void)setPlaceHolderColor:(UIColor *)placeHolderColor font:(UIFont *)font {
     if (_style == TWTextInputViewStyleTextView) {
         _placeholderTextView.textColor = placeHolderColor;
+        if (font) {
+            _placeholderTextView.font = font;
+        }
     }
     if (_style == TWTextInputViewStyleTextFiled) {
-        _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@" " attributes:@{NSForegroundColorAttributeName:placeHolderColor}];
+        if (font) {
+            _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@" " attributes:@{NSForegroundColorAttributeName:placeHolderColor, NSFontAttributeName: font}];
+        }else {
+            _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@" " attributes:@{NSForegroundColorAttributeName:placeHolderColor}];
+        }
     }
 }
 
