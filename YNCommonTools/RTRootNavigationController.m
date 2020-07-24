@@ -629,7 +629,7 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
                 button.frame =  CGRectMake(0, 0, viewController.navigationController.navigationBar.frame.size.height, viewController.navigationController.navigationBar.frame.size.height);
             }
             button.tag = -275799580;
-            [button addTarget:self action:@selector(onBack:) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:viewController action:@selector(customBackButtonMethod:) forControlEvents:UIControlEventTouchUpInside];
             [viewController.navigationController.navigationBar addSubview:button];
         }else {
             UIButton *button = (UIButton *)[viewController.navigationController.navigationBar viewWithTag:-275799580];

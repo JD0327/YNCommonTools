@@ -70,4 +70,9 @@ IB_DESIGNABLE
  */
 - (Class)rt_navigationBarClass;
 
+/**
+ * 自定义返回按钮点击事件
+ */
+- (void)customBackButtonMethod:(UIButton *)sender;
+
 @end

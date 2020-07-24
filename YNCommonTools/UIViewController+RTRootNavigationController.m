@@ -136,4 +136,11 @@ static const char RTNavigationBackButtonImage = '\0';
     return objc_getAssociatedObject(self, @selector(rt_routerUserInfo));
 }
 
+/**
+ * 自定义返回按钮点击事件
+ */
+- (void)customBackButtonMethod:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

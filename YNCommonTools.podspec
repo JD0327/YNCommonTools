@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YNCommonTools'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = 'MIT'
   s.summary = '增加自定义app内部弹框以及设备静音判断'
   s.homepage = 'https://github.com/JD0327/YNCommonTools'
