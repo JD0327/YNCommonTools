@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = 'YNCommonTools'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = 'MIT'
-  s.summary = '增加自定义app内部弹框以及设备静音判断'
+  s.summary = '优化导航控制器、增加验证码输入框'
   s.homepage = 'https://github.com/JD0327/YNCommonTools'
   s.authors = { 'GentlemanJ' => '1011001397@qq.com' }
   s.source = { :git => "https://github.com/JD0327/YNCommonTools.git", :tag => s.version}
@@ -52,6 +52,11 @@ Pod::Spec.new do |s|
     ss.subspec 'YNRBDMuteSwitch' do |sss|
       sss.source_files = 'YNCommonTools/YNRBDMuteSwitch.{h,m}'
       sss.public_header_files = 'YNCommonTools/YNRBDMuteSwitch.h'
+    end
+
+    ss.subspec 'YNVerifyCodeView' do |sss|
+      sss.source_files = 'YNCommonTools/YNVerifyCodeView.{h,m}'
+      sss.public_header_files = 'YNCommonTools/YNVerifyCodeView.h'
     end
 
     ss.subspec 'YNBannerView' do |sss|

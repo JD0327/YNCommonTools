@@ -27,6 +27,7 @@
 		72094E4C2410B47100A09DE2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E4B2410B47100A09DE2 /* BaseViewController.m */; };
 		72094E542410B48D00A09DE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E532410B48C00A09DE2 /* ViewController.m */; };
 		7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7226C9F02410D9F800B6B93C /* WSDatePickerView.m */; };
+		722AD59924CD4421007CC52A /* YNVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 722AD59824CD4420007CC52A /* YNVerifyCodeView.m */; };
 		7259F5B624B5AFCB0004E8CE /* YNBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5B524B5AFCB0004E8CE /* YNBannerView.m */; };
 		7259F5B924B5AFD60004E8CE /* YNBannerViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5B824B5AFD60004E8CE /* YNBannerViewMaker.m */; };
 		7259F5BC24B5AFEC0004E8CE /* YNBannerShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5BB24B5AFEC0004E8CE /* YNBannerShareManager.m */; };
@@ -73,6 +74,8 @@
 		7226C9EF2410D9F800B6B93C /* WSDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
 		7226C9F02410D9F800B6B93C /* WSDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDatePickerView.m; sourceTree = "<group>"; };
 		7226CA1A2412108600B6B93C /* YNCommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNCommonMethod.h; sourceTree = "<group>"; };
+		722AD59724CD4420007CC52A /* YNVerifyCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNVerifyCodeView.h; sourceTree = "<group>"; };
+		722AD59824CD4420007CC52A /* YNVerifyCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNVerifyCodeView.m; sourceTree = "<group>"; };
 		7259F5B424B5AFCB0004E8CE /* YNBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNBannerView.h; sourceTree = "<group>"; };
 		7259F5B524B5AFCB0004E8CE /* YNBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNBannerView.m; sourceTree = "<group>"; };
 		7259F5B724B5AFD60004E8CE /* YNBannerViewMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNBannerViewMaker.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 		72094E222410B3E000A09DE2 /* YNCommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				722AD59724CD4420007CC52A /* YNVerifyCodeView.h */,
+				722AD59824CD4420007CC52A /* YNVerifyCodeView.m */,
 				7259F5B424B5AFCB0004E8CE /* YNBannerView.h */,
 				7259F5B524B5AFCB0004E8CE /* YNBannerView.m */,
 				7259F5B724B5AFD60004E8CE /* YNBannerViewMaker.h */,
@@ -309,6 +314,7 @@
 			files = (
 				72094E542410B48D00A09DE2 /* ViewController.m in Sources */,
 				72094E412410B3E000A09DE2 /* YNRefreshConfig.m in Sources */,
+				722AD59924CD4421007CC52A /* YNVerifyCodeView.m in Sources */,
 				7259F5B924B5AFD60004E8CE /* YNBannerViewMaker.m in Sources */,
 				72094E3F2410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m in Sources */,
 				72094E422410B3E000A09DE2 /* UIImage+YNExtension.m in Sources */,
