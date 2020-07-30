@@ -89,8 +89,6 @@ static NSString * const TWRegularEmail = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A
 @property (assign, nonatomic, readonly) CGFloat viewHeight;
 /** @b 使用Masonry、SnapKit等第三方布局时使用更新控件高度的回调 */
 @property (copy, nonatomic) void(^updateViewHeight)(CGFloat viewHeight);
-/** 背景颜色 */
-@property (strong, nonatomic) UIColor *backgroundColor;
 /** 占位内容 */
 @property (strong, nonatomic) NSString *placeHolder;
 /** 文本框内容 */

@@ -8,6 +8,7 @@
 
 #import "TWTextInputView.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <objc/runtime.h>
 
 #define COUNT_LABEL_HEIGHT 30.f
 
@@ -89,6 +90,32 @@
     TWTextInputViewConfig *_config;
 }
 
++ (void)load {
+    SEL orig_present = @selector(setBackgroundColor:);
+    SEL swiz_present = @selector(swiz_setBackgroundColor:);
+    [TWTextInputView swizzleMethods:[self class] originalSelector:orig_present swizzledSelector:swiz_present];
+}
+
++ (void)swizzleMethods:(Class)class originalSelector:(SEL)origSel swizzledSelector:(SEL)swizSel {
+    
+    Method origMethod = class_getInstanceMethod(class, origSel);
+    Method swizMethod = class_getInstanceMethod(class, swizSel);
+    
+    //class_addMethod will fail if original method already exists
+    BOOL didAddMethod = class_addMethod(class, origSel, method_getImplementation(swizMethod), method_getTypeEncoding(swizMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod(class, swizSel, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+    } else {
+        //origMethod and swizMethod already exist
+        method_exchangeImplementations(origMethod, swizMethod);
+    }
+}
+
+- (void)swiz_setBackgroundColor:(UIColor *)backgroundColor {
+    [self swiz_setBackgroundColor:[UIColor clearColor]];
+}
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
@@ -108,7 +135,7 @@
 - (void)setupViews {
     
     self.clipsToBounds = YES;
-    self.backgroundColor = [UIColor colorWithRed:243/255.0 green:245/255.0 blue:247/255.0 alpha:1];
+    self.backgroundColor = [UIColor clearColor];
     
     if (_style == TWTextInputViewStyleTextFiled) {
         _textField = [[TWTextField alloc] init];
@@ -590,10 +617,6 @@
     }
 }
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor {
-    self.layer.backgroundColor = backgroundColor.CGColor;
-}
-
 - (void)setTintColor:(UIColor *)tintColor {
     if (_style == TWTextInputViewStyleTextView) {
         _textView.tintColor = tintColor;
@@ -642,10 +665,6 @@
         return _textField.placeholder;
     }
     return @"";
-}
-
-- (UIColor *)backgroundColor {
-    return [UIColor colorWithCGColor:self.layer.backgroundColor];
 }
 
 - (UIColor *)tintColor {

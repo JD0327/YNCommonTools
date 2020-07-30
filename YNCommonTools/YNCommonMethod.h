@@ -121,12 +121,6 @@ GetTopViewController(void) {
             topViewController = topViewController.presentedViewController;
         } else if ([topViewController isKindOfClass:[UINavigationController class]] && [(UINavigationController*)topViewController topViewController]) {
             topViewController = [(UINavigationController *)topViewController topViewController];
-            for (UIViewController *vc in topViewController.childViewControllers) {
-                if ([vc isKindOfClass:[UINavigationController class]] && [(UINavigationController*)vc topViewController]) {
-                    topViewController = vc;
-                    break;
-                }
-            }
         } else if ([topViewController isKindOfClass:[UITabBarController class]]) {
             UITabBarController *tab = (UITabBarController *)topViewController;
             if (tab.viewControllers.count > 0) {
