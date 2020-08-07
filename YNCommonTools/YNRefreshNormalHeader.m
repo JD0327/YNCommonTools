@@ -27,13 +27,13 @@
         [bezierPath moveToPoint:CGPointMake(width*0.7, width*1.1)];
         [bezierPath addLineToPoint:CGPointMake(width, width*1.4)];
         [bezierPath addLineToPoint:CGPointMake(width*1.3, width*1.1)];
-        _arrowLayer.lineWidth = [YNRefreshConfig share].lineWidth;
         _arrowLayer.path = bezierPath.CGPath;
         _arrowLayer.lineCap = kCALineCapRound;
         _arrowLayer.fillColor = [UIColor clearColor].CGColor;
-        _arrowLayer.strokeColor = [YNRefreshConfig share].loadingColor.CGColor;
         _arrowLayer.anchorPoint = CGPointMake(0.5, 0.5);
     }
+    _arrowLayer.lineWidth = [YNRefreshConfig share].lineWidth;
+    _arrowLayer.strokeColor = [YNRefreshConfig share].loadingColor.CGColor;
     return _arrowLayer;
 }
 
@@ -46,24 +46,24 @@
                                                                 endAngle:M_PI_2*3.0
                                                                clockwise:YES];
         _circleLayer.path = bezierPath.CGPath;
-        _circleLayer.strokeColor = [YNRefreshConfig share].loadingColor.CGColor;
         _circleLayer.fillColor = [UIColor clearColor].CGColor;
-        _circleLayer.lineWidth = [YNRefreshConfig share].lineWidth;
         _circleLayer.strokeEnd = 0.05;
         _circleLayer.strokeStart = 0.05;
         _circleLayer.lineCap = kCALineCapRound;
         _circleLayer.anchorPoint = CGPointMake(0.5, 0.5);
     }
+    _circleLayer.lineWidth = [YNRefreshConfig share].lineWidth;
+    _circleLayer.strokeColor = [YNRefreshConfig share].loadingColor.CGColor;
     return _circleLayer;
 }
 
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [YNRefreshConfig share].font;
-        _titleLabel.textColor = [YNRefreshConfig share].textColor;
         _titleLabel.textAlignment = NSTextAlignmentLeft;
     }
+    _titleLabel.font = [YNRefreshConfig share].font;
+    _titleLabel.textColor = [YNRefreshConfig share].textColor;
     return _titleLabel;
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YNCommonTools'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.license = 'MIT'
   s.summary = '优化导航控制器、增加验证码输入框'
   s.homepage = 'https://github.com/JD0327/YNCommonTools'

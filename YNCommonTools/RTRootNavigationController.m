@@ -598,15 +598,15 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
     BOOL isRootVC = viewController == RTSafeUnwrapViewController(self.viewControllers.firstObject);
     BOOL hasSetLeftItem = viewController.navigationItem.leftBarButtonItem != nil;
     
-    UIView *labelView = [viewController.navigationController.navigationBar viewWithTag:-275799581];
-    if (labelView) {
+    UIView *titleLabel = [viewController.navigationController.navigationBar viewWithTag:-275799581];
+    if (titleLabel) {
         if (kIPhoneX && [UIApplication sharedApplication].statusBarOrientation != UIInterfaceOrientationPortrait) {
-            labelView.frame = CGRectMake(viewController.navigationController.navigationBar.frame.size.height+34, 0, [UIScreen mainScreen].bounds.size.width-(viewController.navigationController.navigationBar.frame.size.height+34)*2, viewController.navigationController.navigationBar.frame.size.height);
+            titleLabel.frame = CGRectMake(viewController.navigationController.navigationBar.frame.size.height+34, 0, [UIScreen mainScreen].bounds.size.width-(viewController.navigationController.navigationBar.frame.size.height+34)*2, viewController.navigationController.navigationBar.frame.size.height);
         }else {
-            labelView.frame = CGRectMake(viewController.navigationController.navigationBar.frame.size.height, 0, [UIScreen mainScreen].bounds.size.width-viewController.navigationController.navigationBar.frame.size.height*2, viewController.navigationController.navigationBar.frame.size.height);
+            titleLabel.frame = CGRectMake(viewController.navigationController.navigationBar.frame.size.height, 0, [UIScreen mainScreen].bounds.size.width-viewController.navigationController.navigationBar.frame.size.height*2, viewController.navigationController.navigationBar.frame.size.height);
         }
     }
-    
+
     if (!isRootVC && !self.useSystemBackBarButtonItem && !hasSetLeftItem) {
         if (!viewController.rt_hidesBackButton) {
             // 移除原有的按钮
@@ -967,6 +967,16 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
     
     viewController = RTSafeUnwrapViewController(viewController);
     
+    UILabel *titleLabel = (UILabel *)[viewController.navigationController.navigationBar viewWithTag:-275799581];
+    if (!titleLabel) {
+        titleLabel = [[UILabel alloc] init];
+        titleLabel.textAlignment = NSTextAlignmentCenter;
+        titleLabel.tag = -275799581;
+        titleLabel.font = [UIFont boldSystemFontOfSize:17];
+        titleLabel.textColor = self.navigationController.navigationBar.tintColor;
+        [viewController.navigationController.navigationBar addSubview:titleLabel];
+    }
+    
     if (!isRootVC && viewController.isViewLoaded) {
         [self _installsLeftBarButtonItemIfNeededForViewController:viewController];
     }
@@ -993,6 +1003,7 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
             self.interactivePopGestureRecognizer.delaysTouchesBegan = YES;
             self.interactivePopGestureRecognizer.delegate = self;
             self.interactivePopGestureRecognizer.enabled = !isRootVC;
+            [self.popRecognizer removeTarget:_navigationInteractiveTransition action:_handleTransition];
         }else {
             if (isRootVC) {
                 [self.popRecognizer removeTarget:_navigationInteractiveTransition action:_handleTransition];

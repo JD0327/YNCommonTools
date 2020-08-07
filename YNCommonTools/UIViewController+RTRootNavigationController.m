@@ -92,17 +92,10 @@ static const char RTNavigationBackButtonImage = '\0';
 
 - (void)setRt_title:(NSString *)rt_title {
     objc_setAssociatedObject(self, @selector(rt_title), rt_title, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    UIView *labelView = [self.navigationController.navigationBar viewWithTag:-275799581];
+    UILabel *labelView = (UILabel *)[self.navigationController.navigationBar viewWithTag:-275799581];
     if (labelView) {
-        [labelView removeFromSuperview];
+        labelView.text = rt_title;
     }
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.tag = -275799581;
-    titleLabel.font = [UIFont boldSystemFontOfSize:17];
-    titleLabel.textColor = self.navigationController.navigationBar.tintColor;
-    titleLabel.text = rt_title;
-    [self.navigationController.navigationBar addSubview:titleLabel];
 }
 
 - (NSString *)rt_title {
@@ -111,17 +104,10 @@ static const char RTNavigationBackButtonImage = '\0';
 
 - (void)setRt_attributedTitle:(NSAttributedString *)rt_attributedTitle {
     objc_setAssociatedObject(self, @selector(rt_attributedTitle), rt_attributedTitle, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    UIView *labelView = [self.navigationController.navigationBar viewWithTag:-275799581];
+    UILabel *labelView = (UILabel *)[self.navigationController.navigationBar viewWithTag:-275799581];
     if (labelView) {
-        [labelView removeFromSuperview];
+        labelView.attributedText = rt_attributedTitle;
     }
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.tag = -275799581;
-    titleLabel.textColor = self.navigationController.navigationBar.tintColor;
-    titleLabel.font = [UIFont boldSystemFontOfSize:17];
-    titleLabel.attributedText = rt_attributedTitle;
-    [self.navigationController.navigationBar addSubview:titleLabel];
 }
 
 - (NSAttributedString *)rt_attributedTitle {

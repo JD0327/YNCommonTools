@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 配置刷新 */
 + (YNRefreshConfig *)share;
 
+/** 默认配置 */
+- (void)defaultConfig;
+
 /** 上拉刷新-普通状态 */
 @property (strong, nonatomic) NSString *headerIdleString;
 
