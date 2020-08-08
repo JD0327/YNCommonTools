@@ -6,7 +6,7 @@
 //  Copyright © 2020 贾亚宁. All rights reserved.
 //
 
-#import "RTRootNavigationController.h"
+#import <RTRootNavigationController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
