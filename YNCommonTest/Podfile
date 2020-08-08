@@ -8,5 +8,6 @@ target 'YNCommonTest' do
   pod "Masonry"
   pod "MJRefresh"
   pod "AFNetworking"
+  pod "RTRootNavigationController"
 
 end

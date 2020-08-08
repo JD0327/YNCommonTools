@@ -13,17 +13,13 @@
 		72094E152410B20600A09DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72094E132410B20600A09DE2 /* LaunchScreen.storyboard */; };
 		72094E182410B20600A09DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E172410B20600A09DE2 /* main.m */; };
 		72094E3E2410B3E000A09DE2 /* TWTextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E252410B3E000A09DE2 /* TWTextInputView.m */; };
-		72094E3F2410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E262410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m */; };
-		72094E402410B3E000A09DE2 /* YNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E282410B3E000A09DE2 /* YNBaseViewController.m */; };
 		72094E412410B3E000A09DE2 /* YNRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E292410B3E000A09DE2 /* YNRefreshConfig.m */; };
 		72094E422410B3E000A09DE2 /* UIImage+YNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E2C2410B3E000A09DE2 /* UIImage+YNExtension.m */; };
 		72094E432410B3E000A09DE2 /* NSDate+YNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E2D2410B3E000A09DE2 /* NSDate+YNExtension.m */; };
 		72094E442410B3E000A09DE2 /* UIView+YNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E322410B3E000A09DE2 /* UIView+YNExtension.m */; };
 		72094E452410B3E000A09DE2 /* YNRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E332410B3E000A09DE2 /* YNRefreshNormalHeader.m */; };
 		72094E462410B3E000A09DE2 /* YNRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E352410B3E000A09DE2 /* YNRefreshNormalFooter.m */; };
-		72094E472410B3E000A09DE2 /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E382410B3E000A09DE2 /* RTRootNavigationController.m */; };
 		72094E482410B3E000A09DE2 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 72094E392410B3E000A09DE2 /* Resources.bundle */; };
-		72094E492410B3E000A09DE2 /* YNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E3A2410B3E000A09DE2 /* YNAppDelegate.m */; };
 		72094E4C2410B47100A09DE2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E4B2410B47100A09DE2 /* BaseViewController.m */; };
 		72094E542410B48D00A09DE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72094E532410B48C00A09DE2 /* ViewController.m */; };
 		7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7226C9F02410D9F800B6B93C /* WSDatePickerView.m */; };
@@ -32,6 +28,8 @@
 		7259F5B924B5AFD60004E8CE /* YNBannerViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5B824B5AFD60004E8CE /* YNBannerViewMaker.m */; };
 		7259F5BC24B5AFEC0004E8CE /* YNBannerShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5BB24B5AFEC0004E8CE /* YNBannerShareManager.m */; };
 		72918E4F24B6BBF200AD83E8 /* YNRBDMuteSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 72918E4E24B6BBF200AD83E8 /* YNRBDMuteSwitch.m */; };
+		72FB88B824DEC2700021BC1A /* YNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FB88B724DEC2700021BC1A /* YNBaseViewController.m */; };
+		72FB88BB24DEC2EC0021BC1A /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FB88BA24DEC2EC0021BC1A /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,26 +43,18 @@
 		72094E172410B20600A09DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72094E232410B3E000A09DE2 /* UIView+YNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YNExtension.h"; sourceTree = "<group>"; };
 		72094E252410B3E000A09DE2 /* TWTextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTextInputView.m; sourceTree = "<group>"; };
-		72094E262410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTRootNavigationController.m"; sourceTree = "<group>"; };
 		72094E272410B3E000A09DE2 /* YNRefreshNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRefreshNormalFooter.h; sourceTree = "<group>"; };
-		72094E282410B3E000A09DE2 /* YNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNBaseViewController.m; sourceTree = "<group>"; };
 		72094E292410B3E000A09DE2 /* YNRefreshConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRefreshConfig.m; sourceTree = "<group>"; };
 		72094E2A2410B3E000A09DE2 /* YNRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRefreshNormalHeader.h; sourceTree = "<group>"; };
-		72094E2B2410B3E000A09DE2 /* RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRootNavigationController.h; sourceTree = "<group>"; };
 		72094E2C2410B3E000A09DE2 /* UIImage+YNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YNExtension.m"; sourceTree = "<group>"; };
 		72094E2D2410B3E000A09DE2 /* NSDate+YNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YNExtension.m"; sourceTree = "<group>"; };
-		72094E2E2410B3E000A09DE2 /* YNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNAppDelegate.h; sourceTree = "<group>"; };
-		72094E2F2410B3E000A09DE2 /* UIViewController+RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTRootNavigationController.h"; sourceTree = "<group>"; };
 		72094E302410B3E000A09DE2 /* TWTextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTextInputView.h; sourceTree = "<group>"; };
 		72094E322410B3E000A09DE2 /* UIView+YNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YNExtension.m"; sourceTree = "<group>"; };
 		72094E332410B3E000A09DE2 /* YNRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRefreshNormalHeader.m; sourceTree = "<group>"; };
 		72094E342410B3E000A09DE2 /* YNRefreshConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRefreshConfig.h; sourceTree = "<group>"; };
 		72094E352410B3E000A09DE2 /* YNRefreshNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRefreshNormalFooter.m; sourceTree = "<group>"; };
-		72094E362410B3E000A09DE2 /* YNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNBaseViewController.h; sourceTree = "<group>"; };
 		72094E372410B3E000A09DE2 /* YNCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNCommonTools.h; sourceTree = "<group>"; };
-		72094E382410B3E000A09DE2 /* RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRootNavigationController.m; sourceTree = "<group>"; };
 		72094E392410B3E000A09DE2 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
-		72094E3A2410B3E000A09DE2 /* YNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNAppDelegate.m; sourceTree = "<group>"; };
 		72094E3B2410B3E000A09DE2 /* NSDate+YNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YNExtension.h"; sourceTree = "<group>"; };
 		72094E3C2410B3E000A09DE2 /* UIImage+YNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YNExtension.h"; sourceTree = "<group>"; };
 		72094E4A2410B47100A09DE2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -84,6 +74,10 @@
 		7259F5BB24B5AFEC0004E8CE /* YNBannerShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNBannerShareManager.m; sourceTree = "<group>"; };
 		72918E4D24B6BBF200AD83E8 /* YNRBDMuteSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRBDMuteSwitch.h; sourceTree = "<group>"; };
 		72918E4E24B6BBF200AD83E8 /* YNRBDMuteSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRBDMuteSwitch.m; sourceTree = "<group>"; };
+		72FB88B624DEC2700021BC1A /* YNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNBaseViewController.h; sourceTree = "<group>"; };
+		72FB88B724DEC2700021BC1A /* YNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNBaseViewController.m; sourceTree = "<group>"; };
+		72FB88B924DEC2EC0021BC1A /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		72FB88BA24DEC2EC0021BC1A /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		D382B79535FEE7E14FC114A5 /* libPods-YNCommonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YNCommonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED2EFD163B84A451109C138 /* Pods-YNCommonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNCommonTest.debug.xcconfig"; path = "Target Support Files/Pods-YNCommonTest/Pods-YNCommonTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +122,8 @@
 				72094E4B2410B47100A09DE2 /* BaseViewController.m */,
 				72094E522410B48C00A09DE2 /* ViewController.h */,
 				72094E532410B48C00A09DE2 /* ViewController.m */,
+				72FB88B924DEC2EC0021BC1A /* NextViewController.h */,
+				72FB88BA24DEC2EC0021BC1A /* NextViewController.m */,
 				72094E112410B20600A09DE2 /* Assets.xcassets */,
 				72094E132410B20600A09DE2 /* LaunchScreen.storyboard */,
 				72094E162410B20600A09DE2 /* Info.plist */,
@@ -139,6 +135,8 @@
 		72094E222410B3E000A09DE2 /* YNCommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				72FB88B624DEC2700021BC1A /* YNBaseViewController.h */,
+				72FB88B724DEC2700021BC1A /* YNBaseViewController.m */,
 				722AD59724CD4420007CC52A /* YNVerifyCodeView.h */,
 				722AD59824CD4420007CC52A /* YNVerifyCodeView.m */,
 				7259F5B424B5AFCB0004E8CE /* YNBannerView.h */,
@@ -152,20 +150,12 @@
 				72094E3B2410B3E000A09DE2 /* NSDate+YNExtension.h */,
 				72094E2D2410B3E000A09DE2 /* NSDate+YNExtension.m */,
 				72094E392410B3E000A09DE2 /* Resources.bundle */,
-				72094E2B2410B3E000A09DE2 /* RTRootNavigationController.h */,
-				72094E382410B3E000A09DE2 /* RTRootNavigationController.m */,
 				72094E302410B3E000A09DE2 /* TWTextInputView.h */,
 				72094E252410B3E000A09DE2 /* TWTextInputView.m */,
 				72094E3C2410B3E000A09DE2 /* UIImage+YNExtension.h */,
 				72094E2C2410B3E000A09DE2 /* UIImage+YNExtension.m */,
 				72094E232410B3E000A09DE2 /* UIView+YNExtension.h */,
 				72094E322410B3E000A09DE2 /* UIView+YNExtension.m */,
-				72094E2F2410B3E000A09DE2 /* UIViewController+RTRootNavigationController.h */,
-				72094E262410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m */,
-				72094E2E2410B3E000A09DE2 /* YNAppDelegate.h */,
-				72094E3A2410B3E000A09DE2 /* YNAppDelegate.m */,
-				72094E362410B3E000A09DE2 /* YNBaseViewController.h */,
-				72094E282410B3E000A09DE2 /* YNBaseViewController.m */,
 				72094E372410B3E000A09DE2 /* YNCommonTools.h */,
 				7226CA1A2412108600B6B93C /* YNCommonMethod.h */,
 				72094E342410B3E000A09DE2 /* YNRefreshConfig.h */,
@@ -316,23 +306,21 @@
 				72094E412410B3E000A09DE2 /* YNRefreshConfig.m in Sources */,
 				722AD59924CD4421007CC52A /* YNVerifyCodeView.m in Sources */,
 				7259F5B924B5AFD60004E8CE /* YNBannerViewMaker.m in Sources */,
-				72094E3F2410B3E000A09DE2 /* UIViewController+RTRootNavigationController.m in Sources */,
 				72094E422410B3E000A09DE2 /* UIImage+YNExtension.m in Sources */,
 				72094E462410B3E000A09DE2 /* YNRefreshNormalFooter.m in Sources */,
 				72094E072410B20600A09DE2 /* AppDelegate.m in Sources */,
 				72094E3E2410B3E000A09DE2 /* TWTextInputView.m in Sources */,
+				72FB88B824DEC2700021BC1A /* YNBaseViewController.m in Sources */,
 				72094E452410B3E000A09DE2 /* YNRefreshNormalHeader.m in Sources */,
 				7259F5B624B5AFCB0004E8CE /* YNBannerView.m in Sources */,
 				7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */,
 				72094E4C2410B47100A09DE2 /* BaseViewController.m in Sources */,
-				72094E492410B3E000A09DE2 /* YNAppDelegate.m in Sources */,
-				72094E472410B3E000A09DE2 /* RTRootNavigationController.m in Sources */,
 				72094E432410B3E000A09DE2 /* NSDate+YNExtension.m in Sources */,
 				72918E4F24B6BBF200AD83E8 /* YNRBDMuteSwitch.m in Sources */,
-				72094E402410B3E000A09DE2 /* YNBaseViewController.m in Sources */,
 				72094E442410B3E000A09DE2 /* UIView+YNExtension.m in Sources */,
 				7259F5BC24B5AFEC0004E8CE /* YNBannerShareManager.m in Sources */,
 				72094E182410B20600A09DE2 /* main.m in Sources */,
+				72FB88BB24DEC2EC0021BC1A /* NextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

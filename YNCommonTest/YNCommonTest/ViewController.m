@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YNCommonTools.h"
 #import <AFNetworking.h>
+#import "NextViewController.h"
 
 @interface ViewController ()
 
@@ -22,8 +23,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.rt_title = @"首页";
     
+    self.title = @"首页";
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(220, 100, 50, 50);
@@ -33,45 +34,8 @@
 }
 
 - (void)buttonTap:(UIButton *)sender {
-    
-//    NSDictionary *requestDic = @{
-//        @"clientId" : @"test",
-//        @"clientSecret" : @"111111",
-//        @"imageCode" : @"930806",
-//        @"password" : @"1111a11",
-//        @"remeberMe" : @"0",
-//        @"username" : @"admin"
-//    };
-    
-//    AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
-//
-//    AFHTTPRequestSerializer *serializer = [[AFHTTPRequestSerializer alloc] init];
-//    [serializer setValue:@"zh-cn" forHTTPHeaderField:@"Accept-Language"];
-//    manger.requestSerializer = serializer;
-//
-//    [manger POST:@"http://192.168.88.116:8080/auth/signIn" parameters:requestDic progress:^(NSProgress * _Nonnull uploadProgress) {
-//        NSLog(@"%lld",uploadProgress.completedUnitCount);
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"%@",responseObject);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"%@",error);
-//    }];
-    
-//    NSURLSession *session = [NSURLSession sharedSession];
-//    NSURL *url = [NSURL URLWithString:@"http://192.168.88.116:8080/auth/signIn"];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-//    request.HTTPMethod = @"POST";
-//    request.HTTPBody = [@"clientId=test&clientSecret=111111&imageCode=930806&password=111a111&remeberMe=0&username=admin" dataUsingEncoding:NSUTF8StringEncoding];
-//    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//           //8.解析数据
-//           NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-//           NSLog(@"%@",dict);
-//
-//        NSLog(@"%@",response);
-//       }];
-//
-//       //7.执行任务
-//       [dataTask resume];
+    NextViewController *vc = [[NextViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

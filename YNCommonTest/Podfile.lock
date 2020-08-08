@@ -16,23 +16,29 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - MJRefresh (3.3.1)
+  - RTRootNavigationController (0.7.2):
+    - RTRootNavigationController/Core (= 0.7.2)
+  - RTRootNavigationController/Core (0.7.2)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MJRefresh
+  - RTRootNavigationController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Masonry
     - MJRefresh
+    - RTRootNavigationController
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
 
-PODFILE CHECKSUM: e4b7ac2315c63b3eb9a1452b1fd335430435654b
+PODFILE CHECKSUM: 8bfaa35269af4d4198ddd9f96221d028206eb782
 
 COCOAPODS: 1.9.3

@@ -22,42 +22,31 @@
 
 @class RTRootNavigationController;
 
+@protocol RTNavigationItemCustomizable <NSObject>
+
+@optional
+
+/*!
+ *  @brief Override this method to provide a custom back bar item, default is a normal @c UIBarButtonItem with title @b "Back"
+ *
+ *  @param target the action target
+ *  @param action the pop back action
+ *
+ *  @return a custom UIBarButtonItem
+ */
+- (UIBarButtonItem *)customBackItemWithTarget:(id)target action:(SEL)action DEPRECATED_MSG_ATTRIBUTE("use rt_customBackItemWithTarget:action: instead!");
+- (UIBarButtonItem *)rt_customBackItemWithTarget:(id)target action:(SEL)action;
+
+@end
+
 IB_DESIGNABLE
-@interface UIViewController (RTRootNavigationController)
-/**
- *  setting title
- */
-@property (nonatomic, strong) IBInspectable NSString *rt_title;
-/**
- *  setting atttitle
- */
-@property (nonatomic, strong) IBInspectable NSAttributedString *rt_attributedTitle;
-/**
- * 为路由而生
- */
-@property (nonatomic, strong) IBInspectable NSDictionary *rt_routerUserInfo;
+@interface UIViewController (RTRootNavigationController) <RTNavigationItemCustomizable>
+
 /*!
  *  @brief set this property to @b YES to disable interactive pop
  */
 @property (nonatomic, assign) IBInspectable BOOL rt_disableInteractivePop;
 
-/*!
- * @brief set this property to @b YES to disable full screen pop
- */
-@property (nonatomic, assign) IBInspectable BOOL rt_disableFullScreenPop;
-
-/**
- * @brief set this property to @b YES to hides BottomBar,  It must be assigned at initialization.
- */
-@property (nonatomic, assign) IBInspectable BOOL rt_hidesBottomBarWhenPushed;
-/**
- * @brief set this property to @b YES to hides backButton
- */
-@property (nonatomic, assign) IBInspectable BOOL rt_hidesBackButton;
-/**
- * @brief set @b rt_backButton image
- */
-@property (nonatomic, strong) UIImage *rt_backBtnImage;
 /*!
  *  @brief @c self\.navigationControlle will get a wrapping @c UINavigationController, use this property to get the real navigation controller
  */
@@ -69,10 +58,5 @@ IB_DESIGNABLE
  *  @return new UINavigationBar class
  */
 - (Class)rt_navigationBarClass;
-
-/**
- * 自定义返回按钮点击事件
- */
-- (void)customBackButtonMethod:(UIButton *)sender;
 
 @end

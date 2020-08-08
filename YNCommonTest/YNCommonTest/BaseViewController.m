@@ -15,17 +15,12 @@
 
 @implementation BaseViewController
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.rt_hidesBottomBarWhenPushed = YES;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    
+    self.yn_backImage = [UIImage imageNamed:@"cdp-data"];
 }
 
 @end

@@ -1,14 +1,15 @@
 Pod::Spec.new do |s|
   s.name = 'YNCommonTools'
-  s.version = '1.0.3'
+  s.version = '1.1.0'
   s.license = 'MIT'
-  s.summary = '优化导航控制器、增加验证码输入框'
+  s.summary = '剔除了一些第三方源码，修改为引用第三方。1.1.0之前的所有版本请不要使用'
   s.homepage = 'https://github.com/JD0327/YNCommonTools'
   s.authors = { 'GentlemanJ' => '1011001397@qq.com' }
   s.source = { :git => "https://github.com/JD0327/YNCommonTools.git", :tag => s.version}
   s.requires_arc = true
 
   s.dependency 'MJRefresh'
+  s.dependency 'RTRootNavigationController'
 
   s.ios.deployment_target = '8.0'
 
@@ -17,8 +18,8 @@ Pod::Spec.new do |s|
   s.source_files = 'YNCommonTools/YNCommonTools.h','YNCommonTools/YNCommonMethod.h'
 
   s.subspec 'Base' do |ss|
-    ss.source_files = 'YNCommonTools/YNAppDelegate.{h,m}','YNCommonTools/YNBaseViewController.{h,m}'
-    ss.public_header_files = 'YNCommonTools/YNAppDelegate.h','YNCommonTools/YNBaseViewController.h'
+    ss.source_files = 'YNCommonTools/YNBaseViewController.{h,m}'
+    ss.public_header_files = 'YNCommonTools/YNBaseViewController.h'
   end
 
   s.subspec 'Catetory' do |ss|
@@ -31,11 +32,6 @@ Pod::Spec.new do |s|
     ss.subspec 'Refresh' do |sss|
       sss.source_files = 'YNCommonTools/YNRefreshNormalFooter.{h,m}','YNCommonTools/YNRefreshNormalHeader.{h,m}','YNCommonTools/YNRefreshConfig.{h,m}'
       sss.public_header_files = 'YNCommonTools/YNRefreshNormalFooter.h','YNCommonTools/YNRefreshNormalHeader.h','YNCommonTools/YNRefreshConfig.h'
-    end
-
-    ss.subspec 'NavigationController' do |sss|
-      sss.source_files = 'YNCommonTools/UIViewController+RTRootNavigationController.{h,m}','YNCommonTools/RTRootNavigationController.{h,m}'
-      sss.public_header_files = 'YNCommonTools/UIViewController+RTRootNavigationController.h','YNCommonTools/RTRootNavigationController.h'
     end
     
     ss.subspec 'TWTextInputView' do |sss|

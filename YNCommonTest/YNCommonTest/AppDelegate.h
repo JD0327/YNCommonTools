@@ -6,10 +6,11 @@
 //  Copyright © 2020 贾亚宁. All rights reserved.
 //
 
-#import "YNAppDelegate.h"
+#import <UIKit/UIKit.h>
 
-@interface AppDelegate : YNAppDelegate <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 
