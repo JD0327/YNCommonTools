@@ -20,7 +20,6 @@
     
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
     
-    self.yn_backImage = [UIImage imageNamed:@"cdp-data"];
 }
 
 @end

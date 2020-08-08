@@ -6,8 +6,6 @@
 //  Copyright © 2019 贾亚宁. All rights reserved.
 //
 
-/** 导航栏 */
-#import "YNBaseViewController.h"  
 /** 输入框 */
 #import "TWTextInputView.h"
 /** 刷新 */

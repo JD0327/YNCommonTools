@@ -6,11 +6,11 @@
 //  Copyright © 2019 贾亚宁. All rights reserved.
 //
 
-#import "YNBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseViewController : YNBaseViewController
+@interface BaseViewController : UIViewController
 
 @end
 

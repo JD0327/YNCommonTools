@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "RTRootNavigationController.h"
+#import <RTRootNavigationController.h>
 #import "YNRefreshConfig.h"
 #import "WSDatePickerView.h"
 #import "YNCommonMethod.h"
@@ -26,12 +26,11 @@
     if (CheckWithVersion(ov)) {
         NSLog(@"是新版本 -- %@",AppVersion());
     }
-    UIApplication.sharedApplication.yn_orientation = UIInterfaceOrientationMaskPortrait;
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
     UITabBarController *tabbar = [[UITabBarController alloc] init];
-    [tabbar setViewControllers:@[[[BaseRootNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]]]];
+    [tabbar setViewControllers:@[[[RTRootNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]]]];
     self.window.rootViewController = tabbar;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -39,19 +38,19 @@
     
 }
 
-#pragma  - mark 屏幕旋转
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
-    return [UIApplication sharedApplication].yn_orientation;
-}
-
-#pragma mark - 第三方键盘
-- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
-    if (![UIApplication sharedApplication].allowOtherKeyBoard) {
-        if ([extensionPointIdentifier isEqualToString:@"com.apple.keyboard-service"]) {
-            return NO;
-        }
-    }
-    return YES;
-}
+//#pragma  - mark 屏幕旋转
+//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+//    return [UIApplication sharedApplication].yn_orientation;
+//}
+//
+//#pragma mark - 第三方键盘
+//- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
+//    if (![UIApplication sharedApplication].allowOtherKeyBoard) {
+//        if ([extensionPointIdentifier isEqualToString:@"com.apple.keyboard-service"]) {
+//            return NO;
+//        }
+//    }
+//    return YES;
+//}
 
 @end

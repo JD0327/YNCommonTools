@@ -28,7 +28,6 @@
 		7259F5B924B5AFD60004E8CE /* YNBannerViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5B824B5AFD60004E8CE /* YNBannerViewMaker.m */; };
 		7259F5BC24B5AFEC0004E8CE /* YNBannerShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259F5BB24B5AFEC0004E8CE /* YNBannerShareManager.m */; };
 		72918E4F24B6BBF200AD83E8 /* YNRBDMuteSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 72918E4E24B6BBF200AD83E8 /* YNRBDMuteSwitch.m */; };
-		72FB88B824DEC2700021BC1A /* YNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FB88B724DEC2700021BC1A /* YNBaseViewController.m */; };
 		72FB88BB24DEC2EC0021BC1A /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FB88BA24DEC2EC0021BC1A /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +73,6 @@
 		7259F5BB24B5AFEC0004E8CE /* YNBannerShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNBannerShareManager.m; sourceTree = "<group>"; };
 		72918E4D24B6BBF200AD83E8 /* YNRBDMuteSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNRBDMuteSwitch.h; sourceTree = "<group>"; };
 		72918E4E24B6BBF200AD83E8 /* YNRBDMuteSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNRBDMuteSwitch.m; sourceTree = "<group>"; };
-		72FB88B624DEC2700021BC1A /* YNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNBaseViewController.h; sourceTree = "<group>"; };
-		72FB88B724DEC2700021BC1A /* YNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNBaseViewController.m; sourceTree = "<group>"; };
 		72FB88B924DEC2EC0021BC1A /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		72FB88BA24DEC2EC0021BC1A /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		D382B79535FEE7E14FC114A5 /* libPods-YNCommonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YNCommonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +132,6 @@
 		72094E222410B3E000A09DE2 /* YNCommonTools */ = {
 			isa = PBXGroup;
 			children = (
-				72FB88B624DEC2700021BC1A /* YNBaseViewController.h */,
-				72FB88B724DEC2700021BC1A /* YNBaseViewController.m */,
 				722AD59724CD4420007CC52A /* YNVerifyCodeView.h */,
 				722AD59824CD4420007CC52A /* YNVerifyCodeView.m */,
 				7259F5B424B5AFCB0004E8CE /* YNBannerView.h */,
@@ -310,7 +305,6 @@
 				72094E462410B3E000A09DE2 /* YNRefreshNormalFooter.m in Sources */,
 				72094E072410B20600A09DE2 /* AppDelegate.m in Sources */,
 				72094E3E2410B3E000A09DE2 /* TWTextInputView.m in Sources */,
-				72FB88B824DEC2700021BC1A /* YNBaseViewController.m in Sources */,
 				72094E452410B3E000A09DE2 /* YNRefreshNormalHeader.m in Sources */,
 				7259F5B624B5AFCB0004E8CE /* YNBannerView.m in Sources */,
 				7226C9F12410D9F800B6B93C /* WSDatePickerView.m in Sources */,
