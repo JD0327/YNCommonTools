@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency 'MJRefresh'
-  s.dependency 'RTRootNavigationController'
 
   s.ios.deployment_target = '8.0'
 
@@ -20,6 +19,7 @@ Pod::Spec.new do |s|
   s.subspec 'Base' do |ss|
     ss.source_files = 'YNCommonTools/YNBaseViewController.{h,m}'
     ss.public_header_files = 'YNCommonTools/YNBaseViewController.h'
+    ss.dependency 'RTRootNavigationController'
   end
 
   s.subspec 'Catetory' do |ss|
