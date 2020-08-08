@@ -1,20 +1,26 @@
 Pod::Spec.new do |s|
   s.name = 'YNCommonTools'
-  s.version = '1.1.0'
+  s.version = '1.1.1'
   s.license = 'MIT'
-  s.summary = '剔除了一些第三方源码，修改为引用第三方。1.1.0之前的所有版本请不要使用'
+  s.summary = '新增BaseViewController'
   s.homepage = 'https://github.com/JD0327/YNCommonTools'
   s.authors = { 'GentlemanJ' => '1011001397@qq.com' }
   s.source = { :git => "https://github.com/JD0327/YNCommonTools.git", :tag => s.version}
   s.requires_arc = true
 
   s.dependency 'MJRefresh'
+  s.dependency 'RTRootNavigationController'
 
   s.ios.deployment_target = '8.0'
 
   s.resource     = 'YNCommonTools/Resources.bundle'
   
   s.source_files = 'YNCommonTools/YNCommonTools.h','YNCommonTools/YNCommonMethod.h'
+
+  s.subspec 'Base' do |ss|
+    ss.source_files = 'YNCommonTools/YNBaseViewController.{h,m}'
+    ss.public_header_files = 'YNCommonTools/YNBaseViewController.h'
+  end
 
   s.subspec 'Catetory' do |ss|
     ss.source_files = 'YNCommonTools/UIImage+YNExtension.{h,m}','YNCommonTools/NSDate+YNExtension.{h,m}','YNCommonTools/UIView+YNExtension.{h,m}'
