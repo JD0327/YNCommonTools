@@ -7,7 +7,7 @@
 //
 
 /** 导航栏 */
-#import "RTRootNavigationController.h"
+#import "YNBaseViewController.h"  
 /** 输入框 */
 #import "TWTextInputView.h"
 /** 刷新 */
