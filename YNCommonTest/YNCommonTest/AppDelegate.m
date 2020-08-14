@@ -38,19 +38,4 @@
     
 }
 
-//#pragma  - mark 屏幕旋转
-//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
-//    return [UIApplication sharedApplication].yn_orientation;
-//}
-//
-//#pragma mark - 第三方键盘
-//- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
-//    if (![UIApplication sharedApplication].allowOtherKeyBoard) {
-//        if ([extensionPointIdentifier isEqualToString:@"com.apple.keyboard-service"]) {
-//            return NO;
-//        }
-//    }
-//    return YES;
-//}
-
 @end
